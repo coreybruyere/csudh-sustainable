@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+import logo from "../img/CSUDH-RGB-Logo-Burgundy-Background.png";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -42,7 +42,8 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              CSUDH Sustainability
+              <img src={logo} alt="CSUDH" style={{ width: "88px" }} />
+              <span>Sustainability</span>
             </Link>
             {/* Hamburger menu */}
             <div
@@ -60,33 +61,27 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
+              {/* <Link className="navbar-item" to="/about">
+                Home
+              </Link> */}
+              <Link className="navbar-item" to="/products">
                 About
               </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
               <Link className="navbar-item" to="/blog">
-                Blog
+                Promgrams & Initiatives
               </Link>
               <Link className="navbar-item" to="/contact">
-                Contact
+                Plans & Commitments
               </Link>
               <Link className="navbar-item" to="/contact/examples">
-                Form Examples
+                Academics & Research
               </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
+              <Link className="navbar-item" to="/contact/examples">
+                Get Involved
+              </Link>
+              <Link className="navbar-item" to="/contact/examples">
+                Contact
+              </Link>
             </div>
           </div>
         </div>

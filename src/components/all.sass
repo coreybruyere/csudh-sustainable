@@ -2,7 +2,7 @@
 
 // Config vars
 // Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
+$kaldi-red: #860038
 $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
@@ -12,6 +12,11 @@ $black: #2b2523
 
 .navbar .navbar-menu
   box-shadow:none !important
+
+.navbar-item
+  color: #fff !important
+  &:hover
+    color: pink
 
 .content .taglist
   list-style: none
@@ -71,6 +76,8 @@ $black: #2b2523
 .margin-top-0
   margin-top: 0 !important
 
+.navbar
+  background-color: #860038 !important;
 .navbar-item .icon
   color: $primary
 // Override for use of svg's from https://simpleicons.org/
@@ -81,6 +88,9 @@ $black: #2b2523
 .navbar-brand .navbar-item
   font-size: 24px;
   font-weight: bold;
+  span
+    font-size: 18px
+    padding-left: 6px
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent

@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: CSUDH
+title: Earth Day is April 22
 image: /img/home-jumbotron.jpg
-heading: CSUDH
-subheading: Support sustainable CSUDH
+heading: Earth Day is April 22
+subheading: Support a sustainable CSUDH this year
 mainpitch:
   title: Why Sustainability?
   description: >
