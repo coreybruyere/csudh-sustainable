@@ -16,13 +16,13 @@ export default class BlogIndexPage extends React.Component {
           <h1
             className="has-text-weight-bold is-size-1"
             style={{
-              boxShadow: "0.5rem 0 0 forestgreen, -0.5rem 0 0 forestgreen",
-              backgroundColor: "forestgreen",
+              boxShadow: "0.5rem 0 0 #005400, -0.5rem 0 0 #005400",
+              backgroundColor: "#005400",
               color: "white",
               padding: "1rem"
             }}
           >
-            Latest Stories
+            Events
           </h1>
         </div>
         <section className="section">

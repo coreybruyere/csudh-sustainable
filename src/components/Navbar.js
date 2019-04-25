@@ -64,22 +64,22 @@ const Navbar = class extends React.Component {
               {/* <Link className="navbar-item" to="/about">
                 Home
               </Link> */}
-              <Link className="navbar-item" to="/products">
+              <Link className="navbar-item" to="#about">
                 About
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item" to="#plans">
                 Plans & Commitments
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item" to="#events">
                 Events
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
+              <Link className="navbar-item" to="#academics">
                 Academics & Research
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
+              <Link className="navbar-item" to="#get-involved">
                 Get Involved
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
+              <Link className="navbar-item" to="/contact">
                 Contact
               </Link>
             </div>

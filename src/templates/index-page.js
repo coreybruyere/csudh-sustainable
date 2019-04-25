@@ -39,9 +39,8 @@ export const IndexPageTemplate = ({
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            boxShadow:
-              "forestgreen 0.5rem 0px 0px, forestgreen -0.5rem 0px 0px",
-            backgroundColor: "forestgreen",
+            boxShadow: "#005400 0.5rem 0px 0px, #005400 -0.5rem 0px 0px",
+            backgroundColor: "#005400",
             color: "white",
             lineHeight: "1",
             padding: "0.25em"
@@ -52,9 +51,8 @@ export const IndexPageTemplate = ({
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            boxShadow:
-              "forestgreen 0.5rem 0px 0px, forestgreen -0.5rem 0px 0px",
-            backgroundColor: "forestgreen",
+            boxShadow: "#005400 0.5rem 0px 0px, #005400 -0.5rem 0px 0px",
+            backgroundColor: "#005400",
             color: "white",
             lineHeight: "1",
             padding: "0.25em"
@@ -79,30 +77,56 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
                 <div className="columns">
-                  <div className="column is-12">
+                  <div className="column is-12" id="about">
                     <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
+                      About
                     </h3>
                     <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
                 <div className="columns">
+                  <div className="column is-12" id="plans">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      Plans & Commitments
+                    </h3>
+                    <p>{description}</p>
+                  </div>
+                </div>
+                {/* <Features gridItems={intro.blurbs} /> */}
+                {/* <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
                       See all products
                     </Link>
                   </div>
+                </div> */}
+                <div className="columns">
+                  <div className="column is-12" id="events">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      Events
+                    </h3>
+                    <BlogRoll />
+                    {/* <div className="column is-12 has-text-centered">
+                      <Link className="btn" to="/blog">
+                        Read more
+                      </Link>
+                    </div> */}
+                  </div>
                 </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
+                <div className="columns">
+                  <div className="column is-12" id="academics">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      Academics & Research
+                    </h3>
+                    <p>{description}</p>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-12" id="get-involved">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      Get Involved
+                    </h3>
+                    <p>{description}</p>
                   </div>
                 </div>
               </div>
