@@ -2,6 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
+import about1 from "../img/about-image-1.png";
+import about2 from "../img/about-image-2.png";
+
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
@@ -81,7 +84,13 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-semibold is-size-2">
                       About
                     </h3>
-                    <p>{description}</p>
+                    <p>
+                      Consideration of the future is a key element of
+                      sustainability. The basic idea behind sustainability is
+                      that the current generation can meet its needs without
+                      compromising the ability of future generations to meet
+                      their needs (Brundtland Report, 1987).
+                    </p>
                   </div>
                 </div>
                 <div className="columns">
@@ -89,7 +98,16 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-semibold is-size-2">
                       Plans & Commitments
                     </h3>
-                    <p>{description}</p>
+                    <p>
+                      CSUDH Sustainability Department is dedicated to: Promoting
+                      a culture of sustainability through the College community
+                      by engaging the powerful education, research and service
+                      traditions of CSUDH. We want to promote sustainable
+                      practices that recognize the need to manage human
+                      interactions with ecosystems to minimize impacts of use,
+                      conserve the regenerative capacity of the natural
+                      environment, and promote its ecological integrity.{" "}
+                    </p>
                   </div>
                 </div>
                 {/* <Features gridItems={intro.blurbs} /> */}
@@ -118,17 +136,24 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-semibold is-size-2">
                       Academics & Research
                     </h3>
-                    <p>{description}</p>
+                    <p className="columns">
+                      <div className="column is-6">
+                        <img src={about1} />
+                      </div>
+                      <div className="column is-6">
+                        <img src={about2} />
+                      </div>
+                    </p>
                   </div>
                 </div>
-                <div className="columns">
+                {/* <div className="columns">
                   <div className="column is-12" id="get-involved">
                     <h3 className="has-text-weight-semibold is-size-2">
                       Get Involved
                     </h3>
                     <p>{description}</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

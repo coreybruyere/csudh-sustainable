@@ -21,22 +21,22 @@ const Footer = class extends React.Component {
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
-                      <Link className="navbar-item" to="/about">
+                      <Link className="navbar-item" to="#about">
                         About
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact/examples">
+                      <Link className="navbar-item" to="#plans">
                         Plans & Commitments
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/products">
+                      <Link className="navbar-item" to="#events">
                         Events
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact/examples">
+                      <Link className="navbar-item" to="#academics">
                         Academics & Research
                       </Link>
                     </li>
@@ -46,13 +46,13 @@ const Footer = class extends React.Component {
               <div className="column is-4">
                 <section>
                   <ul className="menu-list">
-                    <li>
+                    {/* <li>
                       <Link className="navbar-item" to="/contact/examples">
                         Get Involved
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
-                      <Link className="navbar-item" to="/contact/examples">
+                      <Link className="navbar-item" to="/contact">
                         Contact
                       </Link>
                     </li>
